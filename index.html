@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Motii 💙</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ font-family:Georgia,serif;
+ color:#38536c;
+ background:linear-gradient(135deg,#dff5ff,#fff0f6,#e8f5ff);
+ min-height:100vh;
+}
+
+.page{
+ display:none;
+ min-height:100vh;
+ padding:25px 16px;
+ align-items:center;
+ justify-content:center;
+}
+
+.page.active{display:flex}
+
+.card{
+ width:100%;
+ max-width:480px;
+ padding:28px 22px;
+ background:#ffffffdf;
+ border:1px solid white;
+ border-radius:28px;
+ box-shadow:0 12px 35px #6c9cbd25;
+ text-align:center;
+}
+
+h1{color:#438bb9;font-size:32px}
+h2{color:#d779a0;font-size:27px}
+
+p{
+ font-size:17px;
+ line-height:1.8;
+ white-space:pre-line;
+}
+
+.icon{font-size:42px}
+
+button{
+ display:inline-block;
+ border:0;
+ border-radius:30px;
+ padding:13px 18px;
+ margin:7px 3px;
+ background:#68b5e4;
+ color:white;
+ font-size:14px;
+ font-weight:bold;
+ cursor:pointer;
+}
+
+.pink{background:#e99ab8}
+.soft{background:#e4edf5;color:#435d72}
+
+img{
+ width:100%;
+ max-width:330px;
+ border-radius:18px;
+ margin:12px 0;
+}
+
+audio{width:100%;margin:15px 0}
+
+.small{font-size:12px;color:#788d9d}
+
+.heart{
+ animation:beat 1.5s infinite;
+ display:inline-block;
+}
+
+@keyframes beat{
+ 50%{transform:scale(1.12)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- FIRST PAGE -->
+<section class="page active" id="one">
+<div class="card">
+<div class="icon">🦋💙🦋</div>
+<h1>Hey, Motii… ❤️</h1>
+<p>I made this little space just for you.
+
+There are a few things I want you to hear from my heart.</p>
+
+<audio controls>
+<source src="myvoice.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+<p class="small">My voice, just for you 🎧</p>
+<button onclick="show('two')">Open My Heart 💌</button>
+</div>
+</section>
+
+<!-- LOVE LETTER -->
+<section class="page" id="two">
+<div class="card">
+<div class="icon">💌</div>
+<h2>Dear Motii ❤️</h2>
+
+<p>Mun sabubele tote love kari asichi. Sabubele tote mo first priority re rakhichi.
+
+Bas, mu mo feelings thik se bujhiparinathili au tote bujhaiparinathili.
+
+Honestly, mo pain feelings express kariba tike cringy laguthila. Kintu ebe bujhuchi je feelings thile taku express kariba bhi kete important.
+
+Mu past change kariparibini, kintu nijaku improve kariparibi. Mo feelings kebala words re nuhen, actions re express karibaku chahunchi.
+
+Mu tote au gote chance magibaku chahunchi—not to force you, but because I genuinely want to make things better.
+
+Mu chahunchi ame thare shantire face-to-face katha heba. Mu tora feelings bujhibaku chahunchi au mora feelings bhi honestly express karibaku chahunchi.
+
+Mu kichhi force karibini. Tora feelings au decision ku respect karibi.
+
+With honesty, not promises alone. ❤️</p>
+
+<button onclick="show('three')">One More Thing 🎁</button>
+</div>
+</section>
+
+<!-- DRESS GIFT -->
+<section class="page" id="three">
+<div class="card">
+<div class="icon">👗✨</div>
+<h2>A Little Gift for My Princess</h2>
+
+<p>I saw this dress and imagined you looking like a little princess in it. 💙
+
+I don't know if you'll like it, but when I saw it, I thought of you.
+
+To me, your smile is more beautiful than any dress. 🦋</p>
+
+<img src="dress.jpg" alt="A dress for Motii"
+onerror="this.style.display='none'">
+
+<button onclick="show('four')">Can I Ask You Something? ❤️</button>
+</div>
+</section>
+
+<!-- RELATIONSHIP QUESTION -->
+<section class="page" id="four">
+<div class="card">
+<div class="icon">🌷❤️</div>
+<h1>Can We Try Again?</h1>
+
+<p>Motii, would you be willing to give us another chance and see if we can make things better together?
+
+Whatever your answer is, I'll respect it. You don't owe me a yes. 💙</p>
+
+<button class="pink" onclick="show('five')">
+❤️ Yes, I'd Like to Try Again
+</button>
+
+<button class="soft" onclick="show('six')">
+🤍 I Need Some Time
+</button>
+</div>
+</section>
+
+<!-- BERHAMPUR INVITATION -->
+<section class="page" id="five">
+<div class="card">
+<div class="icon">🌸🦋🌸</div>
+<h2>One Day in Berhampur?</h2>
+
+<p>If you're comfortable, I'd love to meet you in Berhampur one day.
+
+We could sit together, talk peacefully, and listen to each other.
+
+No pressure or expectations—only if you genuinely want to. ❤️</p>
+
+<button onclick="show('seven')">Yes, Let's Meet 🌷</button>
+
+<button class="soft" onclick="show('eight')">Not Right Now</button>
+</div>
+</section>
+
+<!-- NEED TIME -->
+<section class="page" id="six">
+<div class="card">
+<div class="icon">🤍🌷</div>
+<h2>Take Your Time, Motii</h2>
+
+<p>I understand. You don't have to decide anything right now.
+
+Take all the time you need. Whenever you're comfortable, maybe we can talk one day.
+
+I'll respect your space and your feelings.
+
+Please take care of yourself. 💙</p>
+
+<button onclick="show('eight')">With Care, Always 🦋</button>
+</div>
+</section>
+
+<!-- MEETING YES -->
+<section class="page" id="seven">
+<div class="card">
+<div class="icon">💙🌸💙</div>
+<h2>Thank You, Motii!</h2>
+
+<p>Your willingness to talk means a lot to me.
+
+We'll plan everything only when we're both comfortable.
+
+Just an honest conversation, at a time that works for both of us. ❤️</p>
+
+<button onclick="show('eight')">One Last Message 💌</button>
+</div>
+</section>
+
+<!-- ENDING -->
+<section class="page" id="eight">
+<div class="card">
+<div class="icon">🦋💙🦋</div>
+<h1>Whatever Happens…</h1>
+
+<p>Thank you for reading everything I wanted to say.
+
+You deserve kindness, honesty, and happiness.
+
+Take care, Motii. 🌷
+
+With honesty and care. ❤️</p>
+
+<p class="small">Made with love, just for you.</p>
+</div>
+</section>
+
+<script>
+function show(id){
+ document.querySelectorAll('.page').forEach(function(page){
+  page.classList.remove('active');
+ });
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
